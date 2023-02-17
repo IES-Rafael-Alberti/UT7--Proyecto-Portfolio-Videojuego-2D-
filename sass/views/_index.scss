@@ -1,0 +1,173 @@
+// Inicio
+
+body {
+    margin: 0px auto;
+    font-family: Jost;
+}
+
+
+
+.inicio {
+    width: 100%;  
+    height: 100vh;
+    text-align: center;
+
+    .inicio__fondo{
+        position: relative;
+        opacity: 90%;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .inicio__imagen {
+        width: 40%;
+        position: relative;
+        z-index: 1;
+        top: -70%;
+    }
+}
+
+
+
+.campeones {
+    width: 100%;
+    height: 50vh;
+    background-color: $color-principal-oscuro;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .campeones__marco-imagen {
+        top: 50%;
+        width: 50%;
+        text-align: center;
+        
+        .campeones__imagen {
+            width: 60%;
+        }
+    }
+
+    .campeones__texto {
+        width: 50%;
+        height: inherit;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-right: 10%;
+        display: flex;
+        justify-content: center;
+        
+        h1 {
+            margin-top: 0px;
+        }
+
+        p {
+            font-size: larger;
+        }
+
+        .button {
+            background-color: $color-secundario;
+        }
+    }
+}
+
+
+
+.maestrias {
+    width: 100%;
+    height: 50vh;
+    background-color: $color-secundario-oscuro;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .maestrias__marco-imagen {
+        width: 50%;
+        text-align: center;
+
+        .maestrias__imagen {
+            width: 60%;
+        }
+    }
+
+    .maestrias__texto {  
+        width: 50%;
+        height: inherit;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10%;
+        display: flex;
+        justify-content: center;
+
+        h1 {
+            margin-top: 0px;
+        }
+
+        p {
+            font-size: larger;
+        }
+
+        .button {
+            color: aliceblue;
+            background-color: $color-principal-oscuro;
+        }
+    }
+}
+
+
+
+.desafios {
+    width: 100%;
+    height: 50vh;
+    background-color: $color-principal-oscuro;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .desafios__marco-imagen {
+        top: 50%;
+        width: 50%;
+        text-align: center;
+        
+        .desafios__imagen {
+            width: 60%;
+        }
+    }
+
+    .desafios__texto {
+        width: 50%;
+        height: inherit;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-right: 10%;
+        display: flex;
+        justify-content: center;
+        
+        h1 {
+            margin-top: 0px;
+        }
+        
+        p {
+            font-size: larger;
+        }
+
+        .button {
+            background-color: $color-secundario;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+  .campeones, .maestrias, .desafios {
+    height: max-content;
+    padding: 5vh 0;
+    font-size: small;
+  }
+}

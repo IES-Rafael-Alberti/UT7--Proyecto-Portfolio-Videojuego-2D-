@@ -1,0 +1,12 @@
+// MAIN FILE (Imports del resto de archivos)
+
+@import 'utilities/variables';
+
+@import 'base/typo';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'components/buttons';
+
+@import "views/index";
