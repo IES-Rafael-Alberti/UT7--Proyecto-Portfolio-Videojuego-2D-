@@ -2,13 +2,12 @@
 
 header.header {
   width: 100%;
-  height: max-content;
-  padding: 3vh 0;
+  height: 30vh;
   // background-color: $color-principal;
   background: linear-gradient($color-principal, transparent);
   color: aliceblue;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -23,33 +22,33 @@ header.header {
     cursor: pointer;
   }
 
+  .header__logo{
+    width: 125px;
+  }
+
   .header__logo-small{
     display: none;
     align-items: center;
   }
 
-  .header__menu-icono{
-    width: 50px;
-  }
-
-  // // .header__menu {
-  // //   padding-left: 100px;
+  // .header__menu {
+  //   padding-left: 100px;
     
-  // //   ul {
-  // //     width: 50vw;
-  // //     font-weight: bold;
-  // //     font-size: medium;
-  // //     display: flex;
-  // //     justify-content: center;
-  // //     column-gap: 40px;
-  // //     align-items: center;
-  // //   }
+  //   ul {
+  //     width: 50vw;
+  //     font-weight: bold;
+  //     font-size: medium;
+  //     display: flex;
+  //     justify-content: center;
+  //     column-gap: 40px;
+  //     align-items: center;
+  //   }
 
-  // //   li {
-  // //     display: block;
-  // //     line-height: 30px;
-  // //     transition: all .5s;  
-  // //   }
+  //   li {
+  //     display: block;
+  //     line-height: 30px;
+  //     transition: all .5s;  
+  //   }
 
   //   .header__link {
   //     color: aliceblue;
@@ -59,7 +58,7 @@ header.header {
 
   .header__user {
     width: 50px;
-    text-align: center;
+    right: 25px;
   }
 
   // .header__registro {
