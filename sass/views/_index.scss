@@ -3,7 +3,7 @@
 body {
     margin: 0px auto;
     font-family: Jost;
-    background-color: darkslateblue;
+    background-color: #160040;
 }
 
 
@@ -21,7 +21,8 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: darkblue;
+        // background-color: #865DFF;
+        background: linear-gradient(#160040, #4C0070);
     }
 
     .video__texto {
@@ -30,8 +31,12 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: larger;
-        background-color: #000; //adobe color
+        font-size: larger;        
+        text-align: center;
+        // background-color: rgb(0, 0, 0, 0.7);
+        background: linear-gradient(#4C0070, #79018C);
+        color: #fff;
+        font-weight: bold;
     }
 }
 
@@ -40,8 +45,9 @@ body {
 .logo_escenario {
     width: 100%;
     height: 70vh;
-    color: #fff;
+    color: #FFF;
     display: flex;
+    background-color: #79018C;
 
     .logo {
         width: 50%;
@@ -50,14 +56,16 @@ body {
         align-items: center;
         justify-content: center;
         gap: 10%;
-        background-color: darkslateblue;
-        border: 2px solid #000;
+        // background: linear-gradient(to left, #FFF, darkslateblue 15%);
+        color: #fff;
+        font-weight: bold;
 
         .logo__imagen{
-            width: 200px;
+            width: 175px;
         }
 
         .logo__texto {
+            text-align: center;
             font-size: larger;
             padding-left: 20%;
             padding-right: 20%;
@@ -72,14 +80,16 @@ body {
         align-items: center;
         justify-content: center;
         gap: 10%;
-        background-color: darkslateblue;
-        border: 2px solid #000;
-        
+        // background: linear-gradient(to right, #FFF, darkslateblue 15%);
+        color: #fff;
+        font-weight: bold;
+
         .escenario__imagen {
-            width: 450px;
+            width: 350px;
         }
 
         .escenario__texto {
+            text-align: center;
             font-size: larger;
             padding-left: 20%;
             padding-right: 20%;
@@ -91,17 +101,21 @@ body {
     width: 100%;
     height: 60vh;
     color: aliceblue;
-    background-color: darkblue;
+    // background-color: darkslateblue;
     display: flex;
     flex-direction: column;
 
     .audios__texto {
-        background-color: burlywood; // adobe color
+        background: linear-gradient(#79018C, #9A0680);
         display: flex;
         font-size: larger;
         align-items: center;
         justify-content: center;
         height: 20%;
+        padding: 0 10%;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
     }
 
     .audios__grupo{
@@ -109,7 +123,8 @@ body {
         justify-content: center;
         align-items: center;
         height: 80%;
-    
+        background-color: #9A0680;
+        
         .audios__audio {
             width: 50%;
             display: flex;
@@ -118,6 +133,7 @@ body {
             justify-content: center;
             align-items: center;
             gap: 20%;
+            font-weight: bold;
         }
     }
 }
@@ -125,61 +141,56 @@ body {
 
 
 .carrousel{
-    width: fit-content;
+    width: 90%;
     max-width: 120em;
     // height: 70vh;
     padding: 2em;
+    margin-left: 3em;
     overflow-x: hidden;
-    background-color: lightblue;
+    // background-color: darkslateblue;
+    background-color: #160040;
 }
 
 .carrousel .grande{
     width: 400%;
-    // width: fit-content;
     display: flex;
     flex-flow: row nowrap;
-    // justify-content: space-between;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 2em;
-    background-color: orange;
-    // gap: 2em;
+    // background-color: orange;
 
     transition: all .5s ease;
     transform: translateX(0%);
 }
 
 .carrousel .img{
-    // width: calc( 100% / 2  - 2em);
-    width: calc( 100% / 4 );
+    width: calc( 100% / 4 - 6em);
     min-height: 10vh;
-    background-color: greenyellow;
-    border: 2px solid greenyellow;
 }
 
 .carrousel .puntos{
     width: auto;
-    margin:1em 0 0;
+    margin: .1em 0 0;
     padding:.5em;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    background-color: #888;
 }
+
 .carrousel .punto{
     list-style: none;
-    border: 2px solid black;
-    width:  2em;
-    height: 2em;
-    margin: 1em 1em 0;
-    background-color: #fff;
+    border: 2px solid #FFF;
+    width:  1.5em;
+    height: 1.5em;
+    margin: 2em 1em 0;
+    background-color: #FFFFFF00;
+    border-radius: 25px;
 }
+
 .carrousel .punto.activo{
-    background-color: red;
+    background-color: #FFF;
 }
-
-
 
 
 
