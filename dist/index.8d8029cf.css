@@ -127,7 +127,7 @@ header.header div #check:checked ~ .header__menu li {
 }
 
 .footer .footer__menu .footer__link {
-  color: #000;
+  color: #fff;
   font-weight: bold;
   text-decoration: none;
 }
