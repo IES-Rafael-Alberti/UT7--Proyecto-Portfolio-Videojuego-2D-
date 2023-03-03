@@ -2,85 +2,38 @@
 
 header.header {
   width: 100%;
-  height: 30vh;
-  // background-color: $color-principal;
-  background: linear-gradient($color-principal, transparent);
-  color: aliceblue;
+  height: 27vh;
+  // background-color: sandybrown;
+  background: linear-gradient(blue, darkslateblue);
+  color: #000;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   .header__logo {
-    width: 150px;
+    width: 125px;
     text-align: center;
   }
 
-  .boton__menu img {
-    display: none;
-    width: 5vw;
-    cursor: pointer;
-  }
-
-  .header__logo{
-    width: 125px;
-  }
-
-  .header__logo-small{
-    display: none;
+  .header__menu {
+    display: flex;
+    width: 100%;
     align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+
+    .header__link {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .header__user {
+      width: 50px;
+      right: 10%;
+    }
   }
-
-  // .header__menu {
-  //   padding-left: 100px;
-    
-  //   ul {
-  //     width: 50vw;
-  //     font-weight: bold;
-  //     font-size: medium;
-  //     display: flex;
-  //     justify-content: center;
-  //     column-gap: 40px;
-  //     align-items: center;
-  //   }
-
-  //   li {
-  //     display: block;
-  //     line-height: 30px;
-  //     transition: all .5s;  
-  //   }
-
-  //   .header__link {
-  //     color: aliceblue;
-  //     text-decoration: none;
-  //   }
-  // }
-
-  .header__user {
-    width: 50px;
-    right: 25px;
-  }
-
-  // .header__registro {
-  //   width: 25vw;
-  //   font-weight: bold;
-  //   font-size: medium;
-  //   display: flex;
-  //   justify-content: center;
-  //   column-gap: 15px;
-  //   align-items: center;
-  //   padding-left: 30px;
-
-  //   .header__link {
-  //     color: aliceblue;
-  //     text-decoration: none;
-  //   }
-
-  //   .button {
-  //     background-color: $color-secundario;
-  //   }
-  // }
-
 
 
   #check {

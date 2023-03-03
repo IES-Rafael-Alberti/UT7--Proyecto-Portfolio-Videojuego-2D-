@@ -3,165 +3,185 @@
 body {
     margin: 0px auto;
     font-family: Jost;
+    background-color: darkslateblue;
 }
 
 
-.slider {
-    width: 100%;  
-    height: 70vh;
-    background-color: #000;
 
-    .inicio__fondo{
-        position: relative;
-        opacity: 90%;
-        z-index: -1;
+.video {
+    width: 100%;
+    height: 80vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+
+    .video__reproductor {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        height: 85%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: darkblue;
     }
 
-    .inicio__imagen {
-        width: 40%;
-        position: relative;
-        z-index: 1;
-        top: -70%;
+    .video__texto {
+        width: 100%;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        background-color: #000; //adobe color
     }
 }
 
 
 
-.campeones {
+.logo_escenario {
     width: 100%;
-    height: 50vh;
-    background-color: $color-principal-oscuro;
+    height: 70vh;
+    color: #fff;
+    display: flex;
+
+    .logo {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10%;
+        background-color: darkslateblue;
+        border: 2px solid #000;
+
+        .logo__imagen{
+            width: 200px;
+        }
+
+        .logo__texto {
+            font-size: larger;
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+    }
+
+
+    .escenario {
+        width: 50%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 10%;
+        background-color: darkslateblue;
+        border: 2px solid #000;
+        
+        .escenario__imagen {
+            width: 450px;
+        }
+
+        .escenario__texto {
+            font-size: larger;
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+    }
+}
+
+.audios {
+    width: 100%;
+    height: 60vh;
     color: aliceblue;
+    background-color: darkblue;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 
-    .campeones__marco-imagen {
-        top: 50%;
-        width: 50%;
-        text-align: center;
-        
-        .campeones__imagen {
-            width: 60%;
-        }
+    .audios__texto {
+        background-color: burlywood; // adobe color
+        display: flex;
+        font-size: larger;
+        align-items: center;
+        justify-content: center;
+        height: 20%;
     }
 
-    .campeones__texto {
-        width: 50%;
-        height: inherit;
-        flex-direction: column;
-        align-items: flex-start;
-        padding-right: 10%;
+    .audios__grupo{
         display: flex;
         justify-content: center;
-        
-        h1 {
-            margin-top: 0px;
-        }
-
-        p {
-            font-size: larger;
-        }
-
-        .button {
-            background-color: $color-secundario;
+        align-items: center;
+        height: 80%;
+    
+        .audios__audio {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            height: inherit;
+            justify-content: center;
+            align-items: center;
+            gap: 20%;
         }
     }
 }
 
 
 
-.maestrias {
-    width: 100%;
-    height: 50vh;
-    background-color: $color-secundario-oscuro;
-    color: black;
+.carrousel{
+    width: fit-content;
+    max-width: 120em;
+    // height: 70vh;
+    padding: 2em;
+    overflow-x: hidden;
+    background-color: lightblue;
+}
+
+.carrousel .grande{
+    width: 400%;
+    // width: fit-content;
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
+    // justify-content: space-between;
     justify-content: center;
     align-items: center;
+    padding: 2em;
+    background-color: orange;
+    // gap: 2em;
 
-    .maestrias__marco-imagen {
-        width: 50%;
-        text-align: center;
+    transition: all .5s ease;
+    transform: translateX(0%);
+}
 
-        .maestrias__imagen {
-            width: 60%;
-        }
-    }
+.carrousel .img{
+    // width: calc( 100% / 2  - 2em);
+    width: calc( 100% / 4 );
+    min-height: 10vh;
+    background-color: greenyellow;
+    border: 2px solid greenyellow;
+}
 
-    .maestrias__texto {  
-        width: 50%;
-        height: inherit;
-        flex-direction: column;
-        align-items: flex-start;
-        padding-left: 10%;
-        display: flex;
-        justify-content: center;
-
-        h1 {
-            margin-top: 0px;
-        }
-
-        p {
-            font-size: larger;
-        }
-
-        .button {
-            color: aliceblue;
-            background-color: $color-principal-oscuro;
-        }
-    }
+.carrousel .puntos{
+    width: auto;
+    margin:1em 0 0;
+    padding:.5em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #888;
+}
+.carrousel .punto{
+    list-style: none;
+    border: 2px solid black;
+    width:  2em;
+    height: 2em;
+    margin: 1em 1em 0;
+    background-color: #fff;
+}
+.carrousel .punto.activo{
+    background-color: red;
 }
 
 
 
-.desafios {
-    width: 100%;
-    height: 50vh;
-    background-color: $color-principal-oscuro;
-    color: aliceblue;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 
-    .desafios__marco-imagen {
-        top: 50%;
-        width: 50%;
-        text-align: center;
-        
-        .desafios__imagen {
-            width: 60%;
-        }
-    }
-
-    .desafios__texto {
-        width: 50%;
-        height: inherit;
-        flex-direction: column;
-        align-items: flex-start;
-        padding-right: 10%;
-        display: flex;
-        justify-content: center;
-        
-        h1 {
-            margin-top: 0px;
-        }
-        
-        p {
-            font-size: larger;
-        }
-
-        .button {
-            background-color: $color-secundario;
-        }
-    }
-}
 
 @media (max-width: 800px) {
   .campeones, .maestrias, .desafios {
