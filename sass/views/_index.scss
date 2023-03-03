@@ -21,7 +21,6 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        // background-color: #865DFF;
         background: linear-gradient(#160040, #4C0070);
     }
 
@@ -33,7 +32,6 @@ body {
         align-items: center;
         font-size: larger;        
         text-align: center;
-        // background-color: rgb(0, 0, 0, 0.7);
         background: linear-gradient(#4C0070, #79018C);
         color: #fff;
         font-weight: bold;
@@ -56,7 +54,6 @@ body {
         align-items: center;
         justify-content: center;
         gap: 10%;
-        // background: linear-gradient(to left, #FFF, darkslateblue 15%);
         color: #fff;
         font-weight: bold;
 
@@ -80,7 +77,6 @@ body {
         align-items: center;
         justify-content: center;
         gap: 10%;
-        // background: linear-gradient(to right, #FFF, darkslateblue 15%);
         color: #fff;
         font-weight: bold;
 
@@ -101,7 +97,6 @@ body {
     width: 100%;
     height: 60vh;
     color: aliceblue;
-    // background-color: darkslateblue;
     display: flex;
     flex-direction: column;
 
@@ -147,7 +142,6 @@ body {
     padding: 2em;
     margin-left: 3em;
     overflow-x: hidden;
-    // background-color: darkslateblue;
     background-color: #160040;
 }
 
@@ -157,7 +151,6 @@ body {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    // background-color: orange;
 
     transition: all .5s ease;
     transform: translateX(0%);
@@ -190,14 +183,4 @@ body {
 
 .carrousel .punto.activo{
     background-color: #FFF;
-}
-
-
-
-@media (max-width: 800px) {
-  .campeones, .maestrias, .desafios {
-    height: max-content;
-    padding: 5vh 0;
-    font-size: small;
-  }
 }
